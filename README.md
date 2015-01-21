@@ -1,8 +1,8 @@
-This repository contains several stuff:
+This repository contains:
 
 # SIRfinalsize
 
-`R` package to analyse the first Ebola outbreak of 1976
+`R` package to final size for SIR epidemic in heterogenous population
 
 ## Installation
 
