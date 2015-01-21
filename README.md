@@ -14,3 +14,6 @@ library(devtools)
 install_github('SIRfinalsize','adamkucharski')
 
 ```
+# Citation
+
+Kucharski AJ, Kwok KO, Wei VW, Cowling BJ, Read JM, Lessler J, Cummings DA, Riley S. The contribution of social behaviour to the transmission of influenza A in a human population. PLOS Pathogens 2014;10(6):e1004206 PMID: 24968312
