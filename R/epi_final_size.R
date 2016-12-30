@@ -22,20 +22,20 @@ epi_final_size<-function(r0=2,contact_matrix,demography_vector){
   mm0=r0*mm0/max(Re(eigen(mm0)$values))
   
   # Define transmission matrix mm_ij*pp_i/pp_i
-  beta1=mm0/pp
+  beta1=mm0/pp0
   beta2=t(t(beta1)*pp0)
   
   # Newton method for solving final size equation
 
   # Define functions f and f'
-  vsize=length(pp)
+  vsize=length(pp0)
   f1<-function(beta2,x){ beta2%*%(1-x) +log(x) }
   f2<-function(beta2,x,size){-beta2+diag(size)/x }
 
   # Set storage vector and precision
   iterations=30
-  iterate_output=matrix(NA,nrow=iterations,ncol=3)
-  x0=0.001*pp # Set starting point
+  iterate_output=matrix(NA,nrow=iterations,ncol=vsize)
+  x0=0.001*pp0 # Set starting point
   
   for(ii in 1:iterations){
     if(ii==1){
