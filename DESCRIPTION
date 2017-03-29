@@ -1,4 +1,4 @@
-Package: epifinalsize
+Package: SIRfinalsize
 Title: Calculates final size for SIR epidemic in heterogenous population
 Version: 0.1
 Authors@R: "Adam Kucharski <first.last@example.com> [aut, cre]"
