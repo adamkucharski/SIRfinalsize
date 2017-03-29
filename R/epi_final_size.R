@@ -21,11 +21,11 @@ epi_final_size<-function(r0=2,contact_matrix,demography_vector,prop_suscep=NULL)
   pp0=as.numeric(demography_vector/sum(demography_vector))
   
   # Scale next generation matrix so max eigenvalue=r0
-  mm0=as.matrix(contact_matrix) * prop_suscep
+  mm0=as.matrix(contact_matrix)
   mm0=r0*mm0/max(Re(eigen(mm0)$values))
   
   # Define transmission matrix A = mm_ij*pp_j/pp_i
-  beta1=mm0/pp0
+  beta1= (mm0* prop_suscep) /pp0
   beta2=t(t(beta1)*pp0)
   
   # Newton method for solving final size equation A*(1−x) + log(x) =0
