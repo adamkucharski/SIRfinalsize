@@ -6,3 +6,4 @@ Description: This package contains function for calculating final size for an SI
 Depends: R (>= 3.1.2)
 License: GPL-2
 LazyData: true
+RoxygenNote: 6.0.1
