@@ -12,6 +12,7 @@ The easiest way to install the development version of `SIRfinalsize` is to use t
 # install.packages("devtools")
 library(devtools)
 install_github("adamkucharski/SIRfinalsize")
+library(epifinalsize)
 
 ```
 # Citation

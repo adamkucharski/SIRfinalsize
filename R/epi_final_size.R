@@ -12,7 +12,7 @@
 
 # DEFINE FINAL SIZE MODEL
 
-epi_final_size<-function(r0=2,contact_matrix,demography_vector,prop_suscep){
+epi_final_size<-function(r0=2,contact_matrix,demography_vector,prop_suscep=NULL){
   
   # Check inputs
   if(is.null(prop_suscep)){prop_suscep=demography_vector*0+1} # Assume fully susceptible if no entry
