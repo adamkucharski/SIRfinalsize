@@ -1,5 +1,3 @@
-This repository contains:
-
 # SIRfinalsize
 
 `R` package to final size for SIR epidemic in a heterogenous population.
