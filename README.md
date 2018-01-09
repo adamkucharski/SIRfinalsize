@@ -1,6 +1,6 @@
 # SIRfinalsize
 
-`R` package to final size for SIR epidemic in a heterogenous population.
+`R` package to calcualte final size for SIR epidemic in a heterogenous population.
 
 ## Installation
 
