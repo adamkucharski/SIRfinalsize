@@ -1,6 +1,8 @@
 # SIRfinalsize
 
-`R` package to calculate final size for SIR epidemic in a heterogenous population.
+_Note: this package has now been superseded by the Epiverse package [`finalsize`](https://epiverse-trace.github.io/finalsize/)_
+
+Below is the original implementation of an `R` package to calculate final size for SIR epidemic in a heterogenous population.
 
 ## Installation
 
